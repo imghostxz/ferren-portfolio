@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ferren Portfolio</title>
+  <meta name="description" content="Ferren draws full illustrations of your characters and Roblox skins, adopts, YCH and manga style. Payment by PayPal or Robux.">
+  <meta name="theme-color" content="#140f17">
+  <meta property="og:title" content="Ferren Portfolio">
+  <meta property="og:description" content="Illustrations, adopts, YCH and manga style. PayPal or Robux.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://imghostxz.github.io/ferren-portfolio/">
+  <meta property="og:image" content="https://imghostxz.github.io/ferren-portfolio/art/thumb/illustration-03.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://imghostxz.github.io/ferren-portfolio/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23730c1e'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-style='italic' font-size='40' fill='%23fff' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="halftone" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="logo" href="#top" aria-label="Ferren, back to top">Ferren</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#commissions">Commissions</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="pill pill-solid pill-sm" href="https://discord.gg/yUHukMJtHS" target="_blank" rel="noopener">Discord <span aria-hidden="true">→</span></a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="status"><span class="dot" aria-hidden="true"></span>Commissions through Discord</p>
+      <h1 class="headline">
+        <span class="w">Illustrations</span>
+        <span class="chip" data-chip="0" aria-hidden="true"><img alt="" src="art/detail/belts.jpg"></span>
+        <span class="w muted">Adopts</span>
+        <br class="br-wide">
+        <span class="w muted">and</span>
+        <span class="chip chip-alt" data-chip="1" aria-hidden="true"><img alt="" src="art/detail/fur.jpg"></span>
+        <span class="w">Manga style</span>
+      </h1>
+      <p class="signature hero-sign" aria-hidden="true">Ferren</p>
+      <p class="sub">Your characters and your Roblox skins, drawn as full illustrations.</p>
+      <div class="hero-cta">
+        <a class="pill pill-solid" href="#commissions">Order a piece <span aria-hidden="true">→</span></a>
+        <p class="pay">Pay with <strong>PayPal</strong> or <strong>Robux</strong></p>
+      </div>
+
+      <div class="showcase" aria-label="Details from recent work">
+        <p class="showcase-label">Up close</p>
+        <p class="signature showcase-sign" aria-hidden="true">Ferren</p>
+        <div class="reel" id="reel"></div>
+      </div>
+    </section>
+
+    <!-- INTRO + SERVICES -->
+    <section class="intro">
+      <div class="wrap intro-grid">
+        <p class="intro-hi">Hi!</p>
+        <p class="intro-text">Ferren is a digital illustrator. Full colour illustrations of your characters and Roblox skins, original adopts, YCH, and black and white manga-style pieces with screentone.</p>
+      </div>
+      <div class="tags" aria-label="What Ferren draws">
+        <div class="tags-track">
+          <span>Full illustrations</span><span>Roblox skin art</span><span>Original characters</span><span>Adopts</span><span>YCH</span><span>Manga style</span><span>Screentone</span><span>Character design</span>
+          <span aria-hidden="true">Full illustrations</span><span aria-hidden="true">Roblox skin art</span><span aria-hidden="true">Original characters</span><span aria-hidden="true">Adopts</span><span aria-hidden="true">YCH</span><span aria-hidden="true">Manga style</span><span aria-hidden="true">Screentone</span><span aria-hidden="true">Character design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS BENTO -->
+    <section class="section bento-section">
+      <div class="wrap">
+        <div class="bento" id="bento">
+          <div class="bento-sign">
+            <p class="signature" aria-hidden="true">Ferren</p>
+            <p>Deep reds, sharp light and screentone, down to the last bead and stitch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="wrap">
+        <div class="head head-row">
+          <div>
+            <p class="kicker">Portfolio</p>
+            <h2>Recent work</h2>
+          </div>
+          <p class="signature head-sign" aria-hidden="true">Ferren</p>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filter by type">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="illustration" role="tab" aria-selected="false">Illustrations</button>
+          <button class="filter" data-filter="adopt" role="tab" aria-selected="false">Adopts</button>
+          <button class="filter" data-filter="ych" role="tab" aria-selected="false">YCH</button>
+          <button class="filter" data-filter="manga" role="tab" aria-selected="false">Manga style</button>
+        </div>
+        <p class="filter-note" id="filter-note" hidden></p>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section">
+      <div class="wrap">
+        <div class="head">
+          <p class="kicker">The process</p>
+          <h2>Here's how it works</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-tag">Start</span>
+            <h3>Open a ticket</h3>
+            <p>Join the <a href="https://discord.gg/yUHukMJtHS" target="_blank" rel="noopener">Discord</a>, go to <strong>#open-a-ticket</strong> and click <em>Open a ticket</em>. Please don't send DMs.</p>
+          </li>
+          <li class="step">
+            <span class="step-tag">Brief</span>
+            <h3>Send your references</h3>
+            <p>Your character or your Roblox skin, the type of piece, pose, mood and any deadline.</p>
+          </li>
+          <li class="step">
+            <span class="step-tag">Delivery</span>
+            <h3>Get your art</h3>
+            <p>You get a price based on complexity, pay with PayPal or Robux, and receive your piece.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- COMMISSIONS (light band) -->
+    <section id="commissions" class="section band-light">
+      <p class="signature band-sign" aria-hidden="true">Ferren</p>
+      <div class="wrap">
+        <div class="head">
+          <p class="kicker">Commissions</p>
+          <h2>Pick your piece</h2>
+          <p class="head-note">Prices depend on how complex the piece is. Ordering several artworks at once costs less per piece.</p>
+          <div class="currency" id="currency" role="group" aria-label="Currency" hidden>
+            <button type="button" class="is-active" data-cur="usd">USD</button>
+            <button type="button" data-cur="robux">Robux</button>
+          </div>
+        </div>
+        <div class="plans" id="plans"></div>
+
+        <div class="pack">
+          <div>
+            <p class="kicker">Multi-art packs</p>
+            <h3>More art, better price</h3>
+            <p>Several pieces in one order get better conditions than single commissions.</p>
+          </div>
+          <div class="pack-side">
+            <dl class="pack-prices" id="pack-prices"></dl>
+            <a class="pill pill-solid" href="https://discord.gg/yUHukMJtHS" target="_blank" rel="noopener">Ask for a pack <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="payline">
+          <span>Payment</span>
+          <strong>PayPal</strong>
+          <strong>Robux</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="wrap faq-grid">
+        <div class="head">
+          <p class="kicker">FAQ</p>
+          <h2>Your questions, answered</h2>
+          <p class="head-note">Something else? Ask in a ticket on Discord.</p>
+          <a class="pill pill-line" href="https://discord.gg/yUHukMJtHS" target="_blank" rel="noopener">Open the Discord <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section final">
+      <div class="wrap">
+        <div class="final-card">
+          <p class="status status-on-red"><span class="dot" aria-hidden="true"></span>Commissions through Discord</p>
+          <h2>Let's make your art</h2>
+          <p>Commissions are handled on Discord, through a ticket in the official community.</p>
+          <a class="pill pill-white" href="https://discord.gg/yUHukMJtHS" target="_blank" rel="noopener">Join the Discord <span aria-hidden="true">→</span></a>
+          <p class="signature final-sign" aria-hidden="true">Ferren</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p class="signature foot-sign" aria-hidden="true">Ferren</p>
+      <div class="foot-row">
+        <p class="rights"><strong>© <span id="year">2026</span> Ferren. All rights reserved.</strong></p>
+        <p>All artwork on this site belongs to Ferren. Reposting, tracing, editing or using it without permission is not allowed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MUSIC -->
+  <button class="sound" id="sound" type="button" aria-pressed="false">
+    <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <span class="sound-label">Play music</span>
+  </button>
+
+  <!-- LIGHTBOX -->
+  <dialog class="lightbox" id="lightbox" aria-label="Artwork viewer">
+    <button class="lb-close" type="button" aria-label="Close">✕</button>
+    <button class="lb-nav lb-prev" type="button" aria-label="Previous">‹</button>
+    <figure class="lb-figure">
+      <img id="lb-img" alt="" draggable="false">
+      <figcaption>
+        <span id="lb-title"></span>
+        <span class="lb-views" id="lb-views"></span>
+        <span class="lb-rights">© Ferren · All rights reserved</span>
+      </figcaption>
+    </figure>
+    <button class="lb-nav lb-next" type="button" aria-label="Next">›</button>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
