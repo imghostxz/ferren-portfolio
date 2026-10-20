@@ -27,6 +27,14 @@ Tudo que muda com frequência fica no começo de [js/main.js](js/main.js):
 3. Rode `python tools/prepare_art.py <pasta das imagens>` para gerar `art/full` e `art/thumb`.
 4. Adicione a obra em `ARTWORKS`.
 
-## Publicar
+## Site no ar
 
-O site é só um conjunto de arquivos e pode ir para qualquer hospedagem estática (GitHub Pages, Netlify, Cloudflare Pages). A pasta `tools/` não precisa ser publicada.
+Endereço: **https://imghostxz.github.io/ferren-portfolio/** (GitHub Pages, repositório `imghostxz/ferren-portfolio`).
+
+Para atualizar depois de editar algo, rode nesta pasta:
+
+```bash
+git add -A && git commit -m "Update site" && git push
+```
+
+O GitHub publica a nova versão em 1 ou 2 minutos. A pasta `tools/` não é enviada (está no `.gitignore`).
